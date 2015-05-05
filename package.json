@@ -1,0 +1,37 @@
+{
+  "name": "bitcoin-core-rpc-spec",
+  "description": "A JavaScript + YAML specification for the Bitcoin Core RPC interface",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "author": {
+    "name": "Chris Arnesen",
+    "email": "chris.arnesen@gmail.com"
+  },
+  "repository": "git://github.com/carnesen/bitcoin-core-rpc-spec.git",
+  "bugs": {
+    "url": "https://github.com/carnesen/bitcoin-core-rpc-spec/issues"
+  },
+  "homepage": "https://github.com/carnesen/bitcoin-core-rpc-spec",
+  "license": "MIT",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "bitcore": "^0.11.4",
+    "js-yaml": "^3.2.7",
+    "lodash": "^3.6.0"
+  },
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "eventemitter2": "^0.4.14",
+    "gulp": "^3.8.11",
+    "gulp-coveralls": "^0.1.3",
+    "gulp-jshint": "^1.9.4",
+    "gulp-mocha": "^2.0.0",
+    "gulp-shell": "^0.4.0",
+    "istanbul": "^0.3.10",
+    "mocha": "^2.2.1",
+    "plato": "^1.4.0",
+    "sinon": "^1.14.1"
+  }
+}
