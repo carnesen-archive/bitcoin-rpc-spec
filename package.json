@@ -1,17 +1,17 @@
 {
-  "name": "bitcoin-core-rpc-spec",
+  "name": "bitcoin-rpc-spec",
   "description": "A JavaScript + YAML specification for the Bitcoin Core RPC interface",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "author": {
     "name": "Chris Arnesen",
     "email": "chris.arnesen@gmail.com"
   },
-  "repository": "git://github.com/carnesen/bitcoin-core-rpc-spec.git",
+  "repository": "git://github.com/carnesen/bitcoin-rpc-spec.git",
   "bugs": {
-    "url": "https://github.com/carnesen/bitcoin-core-rpc-spec/issues"
+    "url": "https://github.com/carnesen/bitcoin-rpc-spec/issues"
   },
-  "homepage": "https://github.com/carnesen/bitcoin-core-rpc-spec",
+  "homepage": "https://github.com/carnesen/bitcoin-rpc-spec",
   "license": "MIT",
   "scripts": {
     "test": "gulp test"
