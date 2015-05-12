@@ -18,7 +18,7 @@ methods:
         example: 000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943
       - name: verbose
         text: true for block information, false for actual block
-        default: true
+        default: false
     result: Object
 
   GetBlockChainInfo:
