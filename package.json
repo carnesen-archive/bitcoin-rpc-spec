@@ -1,7 +1,7 @@
 {
   "name": "bitcoin-rpc-spec",
   "description": "A JavaScript + YAML specification for the Bitcoin Core RPC interface",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "author": {
     "name": "Chris Arnesen",
