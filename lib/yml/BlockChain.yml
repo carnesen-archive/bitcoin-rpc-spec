@@ -10,7 +10,7 @@ methods:
     text: Hash of the best (tip) block in the longest block chain
     result: Hash
 
-  _GetBlock:
+  GetBlock:
     params:
       - name: hash
         text: Hash of the block
@@ -21,33 +21,6 @@ methods:
         default: true
     result: Object
 
-#  GetBlock:
-#    text: Get the actual block
-#    call: _GetBlock
-#    verbose: false
-#    result: Block
-#
-#  GetBlockInfo:
-#    text: Get details about the block
-#    call: _GetBlock
-#    verbose: true
-#    result:
-#      hash: { text: the block hash (same as provided) }
-#      nConfirmations:
-#        text: The number of confirmations or -1 if the block is not on the main chain
-#      nBytes: { alias: size }
-#      height:
-#      version:
-#      merkleRoot: { type: Hash }
-#      txIds: { type: [ Hash ] }
-#      time: { text: The block time in seconds since epoch (Jan 1 1970 GMT) (Unix time) }
-#      nonce:
-#      bits:
-#      difficulty:
-#      chainWork:
-#      previousBlockHash: { default: null }
-#      nextBlockHash: { default: null }
-#
   GetBlockChainInfo:
     text: Get information about block chain processing
     result:
@@ -112,7 +85,7 @@ methods:
       nBytes:
         text: Sum of all tx sizes
 
-  _GetRawMemPool:
+  GetRawMemPool:
     text: List of transactions in the memory pool
     params:
       - name: verbose
@@ -120,26 +93,6 @@ methods:
         default: false
     result: Object
 
-#  GetMemPoolTxIds:
-#    call: _GetRawMemPool
-#    verbose: false
-#    result: [ Hash ]
-#
-#  GetMemPoolTxDetails:
-#    call: _GetRawMemPool
-#    verbose: true
-#    result:
-#      - nBytes: { alias: size }
-#        feeBTC:
-#        arrivalTime: { alias: time }
-#        arrivalHeight: { alias: height }
-#        arrivalPriority: { alias: startingpriority }
-#        currentPriority:
-#        unconfirmedPrevTxIds:
-#          text: unconfirmed transactions used as inputs for this transaction
-#          alias: depends
-#          type: [ Hash ]
-#
   GetTxOut:
     text: Get details about an unspent transaction output (UTXO)
     params:
