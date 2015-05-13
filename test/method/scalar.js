@@ -29,6 +29,10 @@ describe('Scalar', function() {
     Scalar.create('Integer').serialize(' 1.0 ').should.equal(1);
   });
 
+  it('serializes a Boolean', function() {
+    Scalar.create('Boolean').serialize('1').should.equal(true);
+  });
+
   it('serializes a MethodName', function() {
     Scalar.create('MethodName').serialize('GetInfo').should.equal('getinfo');
   });
