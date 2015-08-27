@@ -9,5 +9,3 @@ bitcoin-rpc-spec
 This JavaScript library exports a specification (spec) for  
 [Bitcoin Core's remote procedure call (RPC) interface]
 (https://bitcoin.org/en/developer-reference#remote-procedure-calls-rpcs). 
-
-See https://github.com/carnesen/bitcoin-rpc for usage and examples.
